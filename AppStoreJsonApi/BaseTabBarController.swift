@@ -11,28 +11,24 @@ import UIKit
 class BaseTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let redViewController = UIViewController()
-        redViewController.navigationItem.title = "APPS"
-        redViewController.view.backgroundColor = .white
-
-        let redNavController = UINavigationController(rootViewController: redViewController)
-        redNavController.tabBarItem.title = "Apps"
-        redNavController.tabBarItem.image = #imageLiteral(resourceName: "apps")
-        redNavController.navigationBar.prefersLargeTitles = true
-        
-        let blueViewController = UIViewController()
-        blueViewController.navigationItem.title = "Search"
-        blueViewController.view.backgroundColor = .white
-        
-        let blueNavController = UINavigationController(rootViewController: blueViewController)
-        blueNavController.tabBarItem.title = "Search"
-        blueNavController.tabBarItem.image = UIImage(named: "search")
-        blueNavController.navigationBar.prefersLargeTitles = true
-        
+                
         viewControllers = [
-            redNavController,
-            blueNavController
+            createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon"),
+            createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps"),
+            createNavController(viewController: UIViewController(), title: "Search", imageName: "search")
         ]
+    }
+    
+    fileprivate func createNavController(viewController: UIViewController, title: String, imageName: String) -> UIViewController {
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        
+        viewController.navigationItem.title = title
+        navController.navigationBar.prefersLargeTitles = true
+        navController.tabBarItem.title = title
+        navController.tabBarItem.image = UIImage(named: imageName)
+        navController.view.backgroundColor = .white
+        
+        return navController
     }
 }
