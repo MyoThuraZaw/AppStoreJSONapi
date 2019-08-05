@@ -13,6 +13,7 @@
 		E3E163A822F8619800EB5752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E163A722F8619800EB5752 /* Assets.xcassets */; };
 		E3E163AB22F8619800EB5752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E163A922F8619800EB5752 /* LaunchScreen.storyboard */; };
 		E3E163B322F8630800EB5752 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E163B222F8630800EB5752 /* BaseTabBarController.swift */; };
+		E3E163B822F8882B00EB5752 /* AppSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E163B722F8882B00EB5752 /* AppSearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E3E163AA22F8619800EB5752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E163AC22F8619800EB5752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E163B222F8630800EB5752 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E3E163B722F8882B00EB5752 /* AppSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,24 @@
 		E3E1639F22F8619600EB5752 /* AppStoreJsonApi */ = {
 			isa = PBXGroup;
 			children = (
+				E3E163B422F887CA00EB5752 /* Controller */,
 				E3E163A022F8619600EB5752 /* AppDelegate.swift */,
 				E3E163A222F8619600EB5752 /* ViewController.swift */,
 				E3E163A422F8619600EB5752 /* Main.storyboard */,
 				E3E163A722F8619800EB5752 /* Assets.xcassets */,
 				E3E163A922F8619800EB5752 /* LaunchScreen.storyboard */,
 				E3E163AC22F8619800EB5752 /* Info.plist */,
-				E3E163B222F8630800EB5752 /* BaseTabBarController.swift */,
 			);
 			path = AppStoreJsonApi;
+			sourceTree = "<group>";
+		};
+		E3E163B422F887CA00EB5752 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3E163B222F8630800EB5752 /* BaseTabBarController.swift */,
+				E3E163B722F8882B00EB5752 /* AppSearchController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				E3E163A322F8619600EB5752 /* ViewController.swift in Sources */,
 				E3E163A122F8619600EB5752 /* AppDelegate.swift in Sources */,
 				E3E163B322F8630800EB5752 /* BaseTabBarController.swift in Sources */,
+				E3E163B822F8882B00EB5752 /* AppSearchController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

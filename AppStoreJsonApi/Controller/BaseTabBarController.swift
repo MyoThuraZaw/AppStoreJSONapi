@@ -15,8 +15,9 @@ class BaseTabBarController: UITabBarController {
         viewControllers = [
             createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon"),
             createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps"),
-            createNavController(viewController: UIViewController(), title: "Search", imageName: "search")
+            createNavController(viewController: AppSearchController(), title: "Search", imageName: "search")
         ]
+        
     }
     
     fileprivate func createNavController(viewController: UIViewController, title: String, imageName: String) -> UIViewController {
@@ -30,5 +31,6 @@ class BaseTabBarController: UITabBarController {
         navController.view.backgroundColor = .white
         
         return navController
+        
     }
 }
