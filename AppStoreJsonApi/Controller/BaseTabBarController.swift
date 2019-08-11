@@ -13,11 +13,11 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
                 
         viewControllers = [
+            createNavController(viewController: AppSearchController(), title: "Search", imageName: "search"),
             createNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon"),
-            createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps"),
-            createNavController(viewController: AppSearchController(), title: "Search", imageName: "search")
+            createNavController(viewController: UIViewController(), title: "Apps", imageName: "apps")
         ]
-        
+    
     }
     
     fileprivate func createNavController(viewController: UIViewController, title: String, imageName: String) -> UIViewController {
