@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E35AD01223000658009A267E /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35AD01123000658009A267E /* SearchResultCell.swift */; };
+		E35AD03323002953009A267E /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35AD03223002952009A267E /* UIView+Layout.swift */; };
 		E3E163A122F8619600EB5752 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E163A022F8619600EB5752 /* AppDelegate.swift */; };
 		E3E163A322F8619600EB5752 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E163A222F8619600EB5752 /* ViewController.swift */; };
 		E3E163A622F8619600EB5752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E163A422F8619600EB5752 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		E35AD01123000658009A267E /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		E35AD03223002952009A267E /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		E3E1639D22F8619600EB5752 /* AppStoreJsonApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreJsonApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E163A022F8619600EB5752 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E163A222F8619600EB5752 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E35AD01323001899009A267E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E35AD03223002952009A267E /* UIView+Layout.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		E3E1639422F8619600EB5752 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		E3E1639F22F8619600EB5752 /* AppStoreJsonApi */ = {
 			isa = PBXGroup;
 			children = (
+				E35AD01323001899009A267E /* Helpers */,
 				E35AD01023000627009A267E /* Views */,
 				E3E163B422F887CA00EB5752 /* Controller */,
 				E3E163A022F8619600EB5752 /* AppDelegate.swift */,
@@ -162,6 +173,7 @@
 			files = (
 				E3E163A322F8619600EB5752 /* ViewController.swift in Sources */,
 				E3E163A122F8619600EB5752 /* AppDelegate.swift in Sources */,
+				E35AD03323002953009A267E /* UIView+Layout.swift in Sources */,
 				E3E163B322F8630800EB5752 /* BaseTabBarController.swift in Sources */,
 				E3E163B822F8882B00EB5752 /* AppSearchController.swift in Sources */,
 				E35AD01223000658009A267E /* SearchResultCell.swift in Sources */,
